@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justin Ositu - UI Designer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    #video-background {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+    }
+    /* Header */
+header {
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  padding: 20px;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+  color: #00f7ff; /* Light blue hover color */
+}
+
+/* Home Section */
+#home {
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+#home h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#home h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+#home p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.profile-picture img {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Video Background -->
+  <video autoplay loop muted id="video-background">
+    <source src="background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="content">
+      <div class="intro">
+        <h1>Justin Ositu</h1>
+        <h2>UI Designer</h2>
+        <p>Welcome to my portfolio website! I'm a passionate UI designer with a keen eye for detail and a focus on creating intuitive and visually appealing user experiences.</p>
+      </div>
+      <div class="profile-picture">
+        <img src="PI1.png" alt="Justin Ositu - UI Designer">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; Justin Ositu</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
