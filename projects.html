@@ -7,20 +7,112 @@
   <link rel="stylesheet" href="styles.css">
   <!-- Include SimpleLightbox CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.0/simple-lightbox.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      text-align: center;
+    }
+
+    header ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    header ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    header ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    header ul li a:hover {
+      color: #00f7ff;
+    }
+
+    #projects {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #f4f4f4;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .project {
+      background-color: #fff;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 300px;
+      text-align: left;
+    }
+
+    .project img {
+      width: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    .project img:hover {
+      transform: scale(1.05);
+    }
+
+    .project-details {
+      padding: 20px;
+    }
+
+    .project-details h3 {
+      margin-top: 0;
+    }
+
+    .project-details a {
+      display: block;
+      margin: 10px 0;
+      color: #00f7ff;
+      text-decoration: none;
+    }
+
+    .project-details a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
   <!-- Header -->
   <header>
     <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="experience.html">Experience</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <!-- Projects Section -->
@@ -34,9 +126,12 @@
         </a>
         <div class="project-details">
           <h3>Project 1</h3>
-          <p>This is a description of Project 1. It involves creating a responsive website for a fictional company. The website features modern design elements and interactive features.</p>
-          <a href="#">View Demo</a> <!-- Replace "#" with actual demo link -->
-          <a href="#">GitHub Repository</a> <!-- Replace "#" with actual GitHub repository link -->
+          <p>This project involves creating a responsive website for a fictional company. The website features modern design elements and interactive features.</p>
+          <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
+          <p><strong>Challenges:</strong> Ensuring cross-browser compatibility and responsiveness.</p>
+          <p><strong>Solutions:</strong> Used media queries and modern CSS techniques to achieve responsiveness.</p>
+          <a href="#">View Demo</a>
+          <a href="#">GitHub Repository</a>
         </div>
       </div>
 
@@ -47,9 +142,12 @@
         </a>
         <div class="project-details">
           <h3>Project 2</h3>
-          <p>This is a description of Project 2. It involves building a mobile app for managing tasks and appointments. The app has a user-friendly interface and integrates with calendar services.</p>
-          <a href="#">View Demo</a> <!-- Replace "#" with actual demo link -->
-          <a href="#">GitHub Repository</a> <!-- Replace "#" with actual GitHub repository link -->
+          <p>This project involves building a mobile app for managing tasks and appointments. The app has a user-friendly interface and integrates with calendar services.</p>
+          <p><strong>Technologies Used:</strong> React Native, Redux</p>
+          <p><strong>Challenges:</strong> Integrating with multiple calendar APIs.</p>
+          <p><strong>Solutions:</strong> Used a unified API layer to handle different calendar services.</p>
+          <a href="#">View Demo</a>
+          <a href="#">GitHub Repository</a>
         </div>
       </div>
 
