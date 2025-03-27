@@ -1,88 +1,144 @@
-/* Header */
-header {
-    background-color: #007bff; /* Dark blue background */
-    padding: 20px;
-  }
-  
-  header ul {
-    list-style-type: none;
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-  }
-  
-  header ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  header ul li a {
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
+    font-weight: 500;
     transition: color 0.3s ease;
-  }
-  
-  header ul li a:hover {
-    color: #00f7ff; /* Light blue hover color */
-  }
-  
-  /* Section Title */
-  h2 {
+}
+
+header ul li a:hover {
+    color: #00f7ff;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    header ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Section Title */
+h2 {
     font-size: 36px;
     margin-bottom: 20px;
-  }
-  
-  /* Form Container */
-  .form-container {
+    text-align: center;
+    color: #333;
+}
+
+/* Form Container */
+.form-container {
     max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 40px auto;
+    padding: 25px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Form Title */
-  .form-title {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.form-container:hover {
+    transform: scale(1.02);
+}
+
+/* Form Title */
+.form-title {
     font-size: 24px;
     margin-bottom: 20px;
-  }
-  
-  /* Form Group */
-  .form-group {
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Form Group */
+.form-group {
     margin-bottom: 20px;
-  }
-  
-  .form-group label {
+}
+
+.form-group label {
     display: block;
     font-size: 18px;
     margin-bottom: 5px;
-  }
-  
-  .form-group input[type="text"],
-  .form-group input[type="email"],
-  .form-group textarea {
+    font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  /* Form Submit Button */
-  .form-submit {
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+/* Form Submit Button */
+.form-submit {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     font-size: 18px;
     color: #fff;
-    background-color: #007bff;
+    background: linear-gradient(45deg, #007bff, #0056b3);
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .form-submit:hover {
-    background-color: #0056b3; /* Darker blue hover color */
-  }
-  
+    transition: all 0.3s ease;
+}
+
+.form-submit:hover {
+    background: linear-gradient(45deg, #0056b3, #00408a);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+    .form-container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}
