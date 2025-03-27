@@ -1,58 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Justin Ositu - UI Designer Portfolio</title>
-  <meta name="description" content="Justin Ositu - UI Designer Portfolio showcasing projects, skills, and experience.">
-  <meta name="keywords" content="UI Designer, Web Development, Portfolio, Justin Ositu">
-  <meta name="author" content="Justin Ositu">
-  
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Ositu - Web Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
-  <!-- Video Background -->
-  <video autoplay loop muted id="video-background">
-    <source src="background.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
 
-  <!-- Header -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+<body class="bg-gray-900 text-gray-100">
+
+    <!-- Navbar -->
+    <nav class="flex justify-between p-6 bg-gray-800 shadow-lg">
+        <div class="text-xl font-bold text-teal-400">Wave Techs</div>
+        <ul class="flex space-x-8">
+            <li><a href="#home" class="hover:text-teal-400">Home</a></li>
+            <li><a href="#projects" class="hover:text-teal-400">Projects</a></li>
+            <li><a href="#skills" class="hover:text-teal-400">Skills</a></li>
+            <li><a href="#contact" class="hover:text-teal-400">Contact</a></li>
+        </ul>
     </nav>
-  </header>
 
-  <!-- Home Section -->
-  <section id="home">
-    <div class="content">
-      <div class="intro">
-        <h1>Justin Ositu</h1>
-        <h2>UI Designer & Developer</h2>
-        <p>Welcome to my portfolio website! I specialize in creating visually appealing and intuitive user experiences.</p>
-        <a href="projects.html" class="btn">View My Work</a>
-      </div>
-      <div class="profile-picture">
-        <img src="PI1.png" alt="Justin Ositu - UI Designer">
-      </div>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section id="home" class="flex flex-col items-center justify-center text-center py-20 bg-gray-900">
+        <h1 class="text-5xl font-bold text-teal-400 animate__animated animate__fadeIn">Hi, I'm Justin Ositu</h1>
+        <p class="mt-4 text-lg md:text-xl text-gray-400 animate__animated animate__fadeIn animate__delay-1s">A passionate web developer based in Kenya, creating efficient and user-friendly websites and applications.</p>
+        <a href="#projects" class="mt-6 px-8 py-3 bg-teal-400 text-white rounded-lg shadow-lg hover:bg-teal-500 transition-all">See My Work</a>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Justin Ositu | All Rights Reserved</p>
-  </footer>
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-800">
+        <h2 class="text-4xl text-center text-teal-400">My Projects</h2>
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
+            <!-- Project Example -->
+            <div class="bg-gray-700 p-6 rounded-lg shadow-lg hover:scale-105 transition-all">
+                <h3 class="text-2xl font-semibold text-teal-400">Portfolio Website</h3>
+                <p class="text-gray-300 mt-3">A modern, multi-page portfolio showcasing my web development skills with interactive elements and animations.</p>
+                <a href="https://github.com/justinositu/portfolio" target="_blank" class="text-teal-400 mt-4 block">View on GitHub</a>
+            </div>
+            <!-- Repeat for other projects -->
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-900">
+        <h2 class="text-4xl text-center text-teal-400">Skills</h2>
+        <div class="container mx-auto mt-10">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl text-teal-400">HTML</h3>
+                    <div class="w-full bg-gray-700 h-2 mt-2">
+                        <div class="bg-teal-400 h-2" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl text-teal-400">CSS</h3>
+                    <div class="w-full bg-gray-700 h-2 mt-2">
+                        <div class="bg-teal-400 h-2" style="width: 85%"></div>
+                    </div>
+                </div>
+                <!-- Repeat for other skills -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800">
+        <h2 class="text-4xl text-center text-teal-400">Contact Me</h2>
+        <form action="your_backend_script.php" method="POST" class="max-w-lg mx-auto mt-8">
+            <input type="text" name="name" placeholder="Your Name" class="w-full p-4 mb-4 rounded-lg bg-gray-700 text-white">
+            <input type="email" name="email" placeholder="Your Email" class="w-full p-4 mb-4 rounded-lg bg-gray-700 text-white">
+            <textarea name="message" placeholder="Your Message" rows="5" class="w-full p-4 mb-4 rounded-lg bg-gray-700 text-white"></textarea>
+            <button type="submit" class="px-6 py-3 bg-teal-400 text-white rounded-lg shadow-lg hover:bg-teal-500 transition-all">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-center text-gray-400 py-4">
+        <p>© 2025 Justin Ositu | All rights reserved</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
 </body>
+
 </html>
